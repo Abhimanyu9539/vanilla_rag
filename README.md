@@ -1,6 +1,8 @@
 # Vanilla RAG Project
 
 A Retrieval-Augmented Generation (RAG) application that allows users to upload documents and chat with them using AI.
+<img width="1696" height="877" alt="image" src="https://github.com/user-attachments/assets/097ac6b8-2113-4e66-ab9e-c9c7734b2cc2" />
+
 
 ## Features
 
