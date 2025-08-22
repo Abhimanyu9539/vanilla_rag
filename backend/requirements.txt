@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+langchain
+langchain-openai
+chromadb
+PyPDF2
+python-docx
+python-dotenv
+sentence-transformers
+numpy
+pydantic
+aiofiles

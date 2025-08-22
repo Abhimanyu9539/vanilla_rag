@@ -1,0 +1,39 @@
+Vanilla RAG System Overview
+
+This is a sample document to test the Vanilla RAG (Retrieval-Augmented Generation) system. The system allows users to upload documents and chat with them using AI.
+
+Key Features:
+1. Document Upload: Support for PDF, DOCX, and TXT files
+2. Text Processing: Automatic text extraction and chunking
+3. Vector Storage: Documents are stored as embeddings in ChromaDB
+4. Chat Interface: Interactive chat with uploaded documents
+5. Source Attribution: Responses include references to source documents
+
+Technical Architecture:
+- Backend: FastAPI with Python
+- Frontend: React with Tailwind CSS
+- Vector Database: ChromaDB
+- AI Models: OpenAI GPT for chat, OpenAI embeddings for document vectors
+- Document Processing: PyPDF2 for PDFs, python-docx for DOCX files
+
+How it works:
+1. User uploads a document through the web interface
+2. Backend extracts text and splits it into chunks
+3. Text chunks are converted to embeddings and stored in ChromaDB
+4. When user asks a question, the system:
+   - Converts the question to an embedding
+   - Finds the most similar document chunks
+   - Uses those chunks as context for the AI model
+   - Generates a response based on the retrieved information
+
+Benefits:
+- Accurate responses based on actual document content
+- Source attribution for transparency
+- Scalable architecture for multiple documents
+- User-friendly interface for document management
+
+This system is particularly useful for:
+- Research and analysis
+- Document Q&A
+- Knowledge base management
+- Academic and business applications
